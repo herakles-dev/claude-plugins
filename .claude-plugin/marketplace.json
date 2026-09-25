@@ -1,0 +1,34 @@
+{
+  "name": "herakles-plugins",
+  "owner": {
+    "name": "D. Michael Piscitelli",
+    "url": "https://herakles.dev"
+  },
+  "description": "Claude Code plugins from herakles.dev: an open-sourcing pipeline and a TypeSafe/Jev decision-layer kit.",
+  "plugins": [
+    {
+      "name": "opensource-pipeline",
+      "source": {
+        "source": "github",
+        "repo": "herakles-dev/opensource-pipeline"
+      },
+      "description": "Fork, sanitize, and package a private repo for public release with a 3-agent pipeline — the workflow behind a merged PR into a 267k-star Claude Code repo.",
+      "license": "MIT",
+      "homepage": "https://github.com/herakles-dev/opensource-pipeline",
+      "keywords": ["open-source", "security", "secrets-detection", "developer-tools"]
+    },
+    {
+      "name": "typesafe-claude-kit",
+      "source": {
+        "source": "github",
+        "repo": "herakles-dev/typesafe-claude-kit",
+        "ref": "v0.1.1"
+      },
+      "description": "Claude Code kit for TypeSafe's Jev model: typed Choice/Score/Noul judgments with calibrated probabilities, for a cheap decision layer under your orchestrating LLM.",
+      "version": "0.1.1",
+      "license": "MIT",
+      "homepage": "https://github.com/herakles-dev/typesafe-claude-kit",
+      "keywords": ["ai-agents", "decision-engine", "llm-tooling"]
+    }
+  ]
+}
