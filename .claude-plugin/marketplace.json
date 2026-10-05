@@ -4,7 +4,7 @@
     "name": "D. Michael Piscitelli",
     "url": "https://herakles.dev"
   },
-  "description": "Claude Code plugins from herakles.dev: an open-sourcing pipeline and a TypeSafe/Jev decision-layer kit.",
+  "description": "Claude Code plugins from herakles.dev: an open-sourcing pipeline, a TypeSafe/Jev decision-layer kit and a guard for Excel workbooks.",
   "plugins": [
     {
       "name": "opensource-pipeline",
@@ -15,7 +15,12 @@
       "description": "Fork, sanitize, and package a private repo for public release with a 3-agent pipeline — the workflow behind a merged PR into a 267k-star Claude Code repo.",
       "license": "MIT",
       "homepage": "https://github.com/herakles-dev/opensource-pipeline",
-      "keywords": ["open-source", "security", "secrets-detection", "developer-tools"]
+      "keywords": [
+        "open-source",
+        "security",
+        "secrets-detection",
+        "developer-tools"
+      ]
     },
     {
       "name": "typesafe-claude-kit",
@@ -28,7 +33,30 @@
       "version": "0.1.1",
       "license": "MIT",
       "homepage": "https://github.com/herakles-dev/typesafe-claude-kit",
-      "keywords": ["ai-agents", "decision-engine", "llm-tooling"]
+      "keywords": [
+        "ai-agents",
+        "decision-engine",
+        "llm-tooling"
+      ]
+    },
+    {
+      "name": "safexl",
+      "source": {
+        "source": "git-subdir",
+        "url": "herakles-dev/safexl",
+        "path": "packages/safexl/claude-plugin",
+        "ref": "v0.2.0"
+      },
+      "description": "A hook that watches your workbooks while Claude works. If another library, say openpyxl or pandas, re-saves one, the hook rebuilds it from the original and keeps the cell edits Claude made. When that can't be done, it puts the original back and tells Claude to redo the edit with safexl. No row deletion, no column inserts, no charts. Checked in LibreOffice, not Excel.",
+      "version": "0.2.0",
+      "license": "MIT",
+      "homepage": "https://github.com/herakles-dev/safexl",
+      "keywords": [
+        "excel",
+        "xlsx",
+        "spreadsheet",
+        "mcp"
+      ]
     }
   ]
 }
