@@ -43,7 +43,7 @@
       "name": "safexl",
       "source": {
         "source": "git-subdir",
-        "url": "herakles-dev/safexl",
+        "url": "https://github.com/herakles-dev/safexl.git",
         "path": "packages/safexl/claude-plugin",
         "ref": "v0.2.0"
       },
